@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^2.2.0"
+  }
+}
