@@ -2,7 +2,23 @@
 // To check for prime, number must be only divisible by 1 and itself
 // This does not include 1
 
-function isPrime(num) {}
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  }
+  // test against even numbers
+  if (num % 2 == 0) {
+    return false;
+  }
+
+  // check odd numbers
+  for (let factor = 2; factor < num; factor++) {
+    if (num % factor == 0) {
+      return false;
+    }
+  }
+  return true;
+}
 
 import test from "ava";
 
