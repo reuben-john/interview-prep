@@ -4,7 +4,9 @@ function reverse(string) {}
 
 import test from "ava";
 
-test("test", t => t.is(reverse()), true);
-
-reverse(""); // ''
-reverse("abcdef"); // 'fedcba'
+test("Empty string returns empty string", t => t.is(reverse("")), "");
+test(
+  "Text string returns reveresed string",
+  t => t.is(reverse("abcdef")),
+  "fedcba"
+);
