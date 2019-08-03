@@ -2,8 +2,27 @@
   "scripts": {
     "test": "ava"
   },
+  "ava": {
+    "files": [
+      "**/*.js"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "ava": "^2.2.0"
-  }
+  },
+  "name": "interview-prep",
+  "description": "Interview prep work",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reuben-john/interview-prep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reuben-john/interview-prep/issues"
+  },
+  "homepage": "https://github.com/reuben-john/interview-prep#readme"
 }
