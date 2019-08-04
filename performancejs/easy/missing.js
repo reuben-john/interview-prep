@@ -2,7 +2,20 @@
 // and returns the missing number in the sequence (there are either no missing numbers,
 // or exactly one missing number). Can you do it in O(N) time? Hint: There’s a clever formula you can use.
 
-function missing(array) {}
+// Figure out max number in array
+// loop through array and figure out what number is missing
+
+function missing(array) {
+  let min = 1;
+  let max = Math.max(...array);
+
+  for (let i = min; i <= max; i++) {
+    if (array.indexOf(i) == -1) {
+      return i;
+    }
+  }
+  return undefined;
+}
 
 import test from "ava";
 
