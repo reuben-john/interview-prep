@@ -25,3 +25,4 @@ test("fibonacci of 0 is 0", t => t.is(fib(0), 0));
 test("fibonacci of 0 is 1", t => t.is(fib(1), 1));
 test("fibonacci of 10 is 55", t => t.is(fib(10), 55));
 test("fibonacci of 20 is 6765", t => t.is(fib(20), 6765));
+test("fibonacci of 50 is 12586269025", t => t.is(fib(50), 12586269025));
